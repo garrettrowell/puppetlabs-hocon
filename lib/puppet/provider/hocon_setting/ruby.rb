@@ -1,5 +1,5 @@
 Puppet::Type.type(:hocon_setting).provide(:ruby) do
-  confine feature: :hocon
+  confine feature: :puppet_hocon
 
   def self.namevar(_section_name, setting)
     setting.to_s
